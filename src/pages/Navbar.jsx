@@ -3,6 +3,8 @@ import Logo from"./logo.png"
 import React from 'react'
 import { XMarkIcon } from '@heroicons/react/20/solid'
 
+import { Link } from "react-router-dom"
+
 
 
 export default function Navbar() {
@@ -30,12 +32,12 @@ export default function Navbar() {
           </svg>
           Navigate your ideal career path with tailored expert advice
         </p>
-        <a
-          href="#"
+        <Link
+          to="/"
           className="flex-none rounded-full bg-blue-500 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
         >
           Contact Experts <span aria-hidden="true">&rarr;</span>
-        </a>
+        </Link>
       </div>
       <div className="flex flex-1 justify-end">
         <button type="button" className="-m-3 p-3 focus-visible:outline-offset-[-4px]">
@@ -48,42 +50,42 @@ export default function Navbar() {
     <header className="bg-white border-b-1 shadow-sm">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 ">
         <div className="flex lg:flex-1 items-center">
-          <a href="#" className="-m-1.5 p-1.5">
-            {/* <span className="sr-only">Your Company</span> */}
+          <Link to="/" className="-m-1.5 p-1.5">
+            
             <img alt="" src={Logo} className="h-10 w-auto pr-4" />
-          </a>
-          <a
-          href="#"
+          </Link>
+          <Link
+          to="#"
           className="flex-none rounded-full  bg-blue-500 px-3.5 py-1 text-l font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
         >
           Cources <span aria-hidden="true">&rarr;</span>
-        </a>
+        </Link>
         </div>
         <div className="hidden lg:flex lg:gap-x-12 text-l">
-          <a href="/refer" className="font-semibold leading-6 text-gray-900 hover:underline decoration-gray-300 underline-offset-4">
+          <Link to="/" className="font-semibold leading-6 text-gray-900 hover:underline decoration-gray-300 underline-offset-4">
             Refer & Earn
-          </a>
-          <a href="#" className="font-semibold leading-6 text-gray-900 hover:underline decoration-gray-300 underline-offset-4">
+          </Link>
+          <Link to="/" className="font-semibold leading-6 text-gray-900 hover:underline decoration-gray-300 underline-offset-4">
             Benefits
-          </a>
-          <a href="#" className="font-semibold leading-6 text-gray-900 hover:underline decoration-gray-300 underline-offset-4">
+          </Link>
+          <Link to="/" className="font-semibold leading-6 text-gray-900 hover:underline decoration-gray-300 underline-offset-4">
             FAQ
-          </a>
-          <a href="/support" className="font-semibold leading-6 text-gray-900 hover:underline decoration-gray-300 underline-offset-4">
+          </Link>
+          <Link to="/" className="font-semibold leading-6 text-gray-900 hover:underline decoration-gray-300 underline-offset-4">
             Support
-          </a>
+          </Link>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
         
-          <a href="#" className="flex-none rounded-full   px-3.5 py-1 text-l font-semibold text-black shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">
+          <Link to="/" className="flex-none rounded-full   px-3.5 py-1 text-l font-semibold text-black shadow-sm hover:bg-gray-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">
             Sign Up 
-          </a>
-          <a
-          href="#"
+          </Link>
+          <Link
+          to="/"
           className="flex-none rounded-full  bg-blue-500 px-3.5 py-1 text-l font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
         >
           Login  <span aria-hidden="true">&rarr;</span>
-        </a>
+        </Link>
         </div>
       </nav>
     </header>

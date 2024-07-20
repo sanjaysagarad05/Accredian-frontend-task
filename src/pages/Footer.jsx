@@ -23,7 +23,7 @@ const Footer = () => {
             <h2 className="text-xl font-bold mb-4">Programs</h2>
             <ul style={{justifyContent:"space-between"}}>
               {programs.map((program, index) => (
-                <li key={index} className="flex items-center mb-5">
+                <li key={index} className="flex items-center mb-5" style={{justifyContent:"space-between"}}>
                   <span>{program}</span>
                   <span className="ml-2 text-xl">+</span>
                 </li>

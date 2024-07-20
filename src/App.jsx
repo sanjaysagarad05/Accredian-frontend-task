@@ -1,26 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './pages/Navbar'
-import Nav from './pages/Nav'
-import { BrowserRouter ,Routes, Route } from 'react-router-dom'
-import Refer from './pages/Refer'
-import Support from './pages/Support'
+import "./App.css";
+import Navbar from "./pages/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Refer from "./pages/Refer";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <Navbar/>
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Refer/>} />
-    </Routes>
-    </BrowserRouter>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Refer />} />
+        </Routes>
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
