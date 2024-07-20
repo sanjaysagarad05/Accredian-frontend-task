@@ -81,7 +81,7 @@ function Refer() {
       setErrors(validationErrors);
     } else {
     try {
-      const response = await fetch('http://localhost:4000/api/referrals', {
+      const response = await fetch('https://accredian-backend-task-ap5o.onrender.com/api/referrals', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
