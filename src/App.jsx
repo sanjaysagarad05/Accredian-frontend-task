@@ -16,8 +16,7 @@ function App() {
     <Navbar/>
     <BrowserRouter>
     <Routes>
-      <Route path="/refer" element={<Refer/>} />
-      <Route path="/support" element={<Support/>} />
+      <Route path="/" element={<Refer/>} />
     </Routes>
     </BrowserRouter>
     </>
